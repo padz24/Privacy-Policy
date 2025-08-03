@@ -1,68 +1,76 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kebijakan Privasi | Anonymous Chat Bot</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #f9f9f9;
-      color: #333;
-    }
-    h1, h2 {
-      color: #222;
-    }
-    code {
-      background-color: #eee;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 0.95em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AnonyBotz</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; background: #f9f9f9; color: #333; }
+        h1, h2 { color: #222; }
+        section { margin-bottom: 2em; }
+        code { background: #eee; padding: 0.2em 0.4em; border-radius: 4px; }
+    </style>
 </head>
 <body>
-  <h1>🔐 Kebijakan Privasi</h1>
-  <p>Selamat datang di <strong>Anonymous Chat Bot</strong>. Privasi dan keamanan Anda adalah prioritas kami.</p>
+    <h1>🛡️ Privacy Policy for AnonyBotz</h1>
+    <p><strong>Last updated:</strong> August 3, 2025</p>
 
-  <h2>📌 Data yang Dikumpulkan</h2>
-  <ul>
-    <li>ID Telegram (user_id)</li>
-    <li>Username (jika tersedia)</li>
-    <li>Status pengguna: <code>idle</code>, <code>waiting</code>, atau <code>chatting</code></li>
-    <li>Pesan saat sesi aktif</li>
-    <li>Laporan dan status blokir (untuk moderasi)</li>
-  </ul>
+    <section>
+        <h2>📌 Information We Collect</h2>
+        <ul>
+            <li><strong>Telegram User IDs</strong> and usernames of those interacting with the bot.</li>
+            <li><strong>Group chat metadata</strong> such as group ID, title, and roles (e.g., admin status).</li>
+            <li><strong>Messages sent to the bot</strong> (commands or inline queries), temporarily and for processing only.</li>
+        </ul>
+    </section>
 
-  <h2>📌 Tujuan Pengumpulan</h2>
-  <ul>
-    <li>Mencocokkan pengguna untuk percakapan anonim</li>
-    <li>Meningkatkan kenyamanan dan keamanan obrolan</li>
-    <li>Menangani laporan atau pelanggaran</li>
-    <li>Membatasi penyalahgunaan bot</li>
-  </ul>
+    <section>
+        <h2>🔐 How We Use Your Information</h2>
+        <p>The data collected is used to:</p>
+        <ul>
+            <li>Verify users and group administrators.</li>
+            <li>Respond to bot commands or automate moderation.</li>
+            <li>Track group activity or user status via Supabase for moderation/history logs.</li>
+        </ul>
+    </section>
 
-  <h2>❌ Data yang Tidak Disimpan</h2>
-  <ul>
-    <li>Nama asli, nomor HP, atau informasi pribadi lainnya</li>
-    <li>Pesan tidak disimpan secara permanen</li>
-    <li>Tidak ada pelacakan atau analitik pihak ketiga</li>
-  </ul>
+    <section>
+        <h2>🧾 Data Storage</h2>
+        <p>We store data as follows:</p>
+        <ul>
+            <li>In a secured <strong>Supabase</strong> database.</li>
+            <li>Bot credentials are stored safely in <code>.env</code> files and never shared.</li>
+            <li>No data is shared or sold to third parties.</li>
+        </ul>
+    </section>
 
-  <h2>🛡️ Keamanan dan Penyimpanan</h2>
-  <p>
-    Semua data disimpan dengan aman menggunakan layanan <strong>Supabase</strong> yang terenkripsi. Akses hanya tersedia bagi admin bot untuk keperluan moderasi.
-  </p>
+    <section>
+        <h2>⏳ Data Retention</h2>
+        <p>Messages are processed in real-time and only stored when necessary. Users can request deletion of their data by contacting the bot administrator.</p>
+    </section>
 
-  <h2>📞 Hubungi Kami</h2>
-  <p>
-    Jika Anda memiliki pertanyaan tentang kebijakan ini atau mengalami masalah saat menggunakan bot, hubungi admin melalui bot atau saluran resmi.
-  </p>
+    <section>
+        <h2>🔒 Security</h2>
+        <ul>
+            <li>Use of environment variables for sensitive information.</li>
+            <li>Admin verification and access control using Telegram's role metadata.</li>
+            <li>Authenticated access to database operations.</li>
+        </ul>
+    </section>
 
-  <p><strong>Terima kasih telah menggunakan Anonymous Chat Bot!</strong></p>
- </body>
+    <section>
+        <h2>👤 User Rights</h2>
+        <p>You may request:</p>
+        <ul>
+            <li>Information about what data has been stored.</li>
+            <li>Deletion of your data from our servers.</li>
+            <li>To remove the bot from your groups at any time.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>📞 Contact</h2>
+        <p>For questions or data-related requests, contact the bot owner via Telegram.</p>
+    </section>
+</body>
 </html>
